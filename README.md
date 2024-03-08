@@ -17,6 +17,11 @@ To test continually, on a loop (e.g. to ensure uptime):
 bin/test.sh --loop
 ```
 
+## System requirements
+
+1. npm
+2. The [Playwright system requirements](https://playwright.dev/docs/intro#system-requirements). Playwright can detect if there are additional binaries it needs to install and should prompt you to do so.
+
 ## How it works
 
 `ownisrael` works by running a headless browser and filling out the form on the homepage of RealEstateIsrael.org with randomly generated names, and helpfully makes sure the website is still accepting registrations!
