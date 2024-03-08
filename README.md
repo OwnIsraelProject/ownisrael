@@ -16,3 +16,11 @@ To test continually, on a loop (e.g. to ensure uptime):
 ```
 bin/test.sh --loop
 ```
+
+## How it works
+
+`ownisrael` works by running a headless browser and filling out the form on the homepage of RealEstateIsrael.org with randomly generated names, and helpfully makes sure the website is still accepting registrations!
+
+## What is Real Estate Israel?
+
+Real Estate Israel is a real estate auction selling illegally settled parcels in the West Bank, in violation of international law.
