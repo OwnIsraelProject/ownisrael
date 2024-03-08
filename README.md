@@ -23,4 +23,4 @@ bin/test.sh --loop
 
 ## What is Real Estate Israel?
 
-Real Estate Israel is a real estate auction selling illegally settled parcels in the West Bank, in violation of international law.
+Real Estate Israel is a real estate auction selling illegally settled parcels in the West Bank, in [violation of international law](https://www.democracynow.org/2024/3/1/headlines/new_jersey_community_members_warn_against_synagogues_plan_to_host_israeli_real_estate_event).
