@@ -10,3 +10,9 @@ Test the RealEstateIsrael.org website
 npm install
 bin/test.sh
 ```
+
+To test continually, on a loop (e.g. to ensure uptime):
+
+```
+bin/test.sh --loop
+```
