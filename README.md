@@ -17,6 +17,13 @@ To test continually, on a loop (e.g. to ensure uptime):
 bin/test.sh --loop
 ```
 
+### Notes on testing
+
+- The script tests the website in three different headless browsers, in parallel. You will see output for all three.
+- If the test was successful, you will see something like `3 passed (1.8m)` at the end of each run.
+- The website itself is pretty slow. It takes a couple minutes for each pass.
+- If you see a deprecation notice about `faker.phone.number(format)`, this is normal.
+
 ## System requirements
 
 1. npm
