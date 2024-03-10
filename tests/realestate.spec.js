@@ -6,16 +6,10 @@ test('owns a piece of the holy land', async ({ page }) => {
   test.setTimeout(3000000);
 
   const seed = Math.floor(Math.random() * 3);
-  const fullName = faker.person.fullName();
   const emailName = fullName.split(' ').join(['.', '_', '-'][seed]).toLowerCase();
   const emailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com'][seed];
   const email = `${emailName}@${emailDomain}`;
   const phone = faker.phone.number('###-###-####');
-  const message = 'Thank you!';
-  //const message = faker.random.words({
-  //  min: 3,
-  //  max: 200,
-  //});
 
   const selection = ['New Jersey', 'New York', 'Flatbush'][seed];
 
@@ -27,11 +21,11 @@ test('owns a piece of the holy land', async ({ page }) => {
 
   await page.goto('https://realestateisrael.org/');
 
-  await page.locator('form[action="/#wpcf7-f100-p320-o1"] [name="full-name"]').fill(fullName);
+  await page.locator('form[action="/#wpcf7-f100-p320-o1"] [name="full-name"]').fill('FREE PALESTINE');
   await page.locator('form[action="/#wpcf7-f100-p320-o1"] [name="email"]').fill(email);
   await page.locator('form[action="/#wpcf7-f100-p320-o1"] [name="phone"]').fill(phone);
   await page.locator(`form[action="/#wpcf7-f100-p320-o1"] input[value="${selection}"]`).click({force: true});
-  await page.locator('form[action="/#wpcf7-f100-p320-o1"] [name="message"]').fill(message);
+  await page.locator('form[action="/#wpcf7-f100-p320-o1"] [name="message"]').fill('FREE PALESTINE');
   await page.locator('form[action="/#wpcf7-f100-p320-o1"] [type="submit"]').click({force: true});
 
   await page.screenshot({ path: 'img/submit.png', fullPage: true });
