@@ -6,18 +6,18 @@ test('owns a piece of the holy land', async ({ page }) => {
   test.setTimeout(3000000);
 
   const seed = Math.floor(Math.random() * 3);
-  const emailName = fullName.split(' ').join(['.', '_', '-'][seed]).toLowerCase();
+  const emailName = faker.person.fullName().split(' ').join(['.', '_', '-'][seed]).toLowerCase();
   const emailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com'][seed];
   const email = `${emailName}@${emailDomain}`;
   const phone = faker.phone.number('###-###-####');
 
   const selection = ['New Jersey', 'New York', 'Flatbush'][seed];
 
-  console.log('Using name:', fullName);
+  console.log('Using name: FREE PALESTINE');
   console.log('Using email:', email);
   console.log('Using phone:', phone);
   console.log('Selecting location:', selection);
-  console.log('Message:', message);
+  console.log('Message: FREE PALESTINE');
 
   await page.goto('https://realestateisrael.org/');
 
