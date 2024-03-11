@@ -38,10 +38,10 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 main() {
   if [[ $LOOP ]] ; then
     while true; do
-      npx playwright test
+      npx playwright test --reporter=dot
     done
   else
-    npx playwright test
+    npx playwright test --reporter=dot
   fi
 }
 
