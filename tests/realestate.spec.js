@@ -28,7 +28,5 @@ test('owns a piece of the holy land', async ({ page }) => {
   await page.locator('form[action="/#wpcf7-f100-p320-o1"] [name="message"]').fill('FREE PALESTINE');
   await page.locator('form[action="/#wpcf7-f100-p320-o1"] [type="submit"]').click({force: true});
 
-  await page.screenshot({ path: 'img/submit.png', fullPage: true });
   await expect.soft(page.getByText('Thank you for registering')).toBeVisible({ timeout: 3000000 });
-  await page.screenshot({ path: 'img/confirm.png', fullPage: true });
 });
