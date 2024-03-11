@@ -11,7 +11,7 @@ test('owns a piece of the holy land', async ({ page }) => {
   const email = `${emailName}@${emailDomain}`;
   const phone = faker.phone.number('###-###-####');
 
-  const selection = ['New Jersey', 'New York', 'Flatbush'][seed];
+  const selection = ['New York', 'New York', 'Flatbush'][seed];
 
   console.log('Using name: FREE PALESTINE');
   console.log('Using email:', email);
